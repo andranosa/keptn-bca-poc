@@ -5,7 +5,31 @@ comparison:
     include_result_with_score: pass
     number_of_comparison_results: 1
     aggregate_function: avg
-objectives: []
+objectives:
+    - sli: failure_rate
+      displayName: Failure Rate
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: request_count
+      displayName: Request Count
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: response_time
+      displayName: Response Time
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: slo_9b1c63fb-416d-3e96-9c2f-22f656a97951
+      displayName: ""
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
 total_score:
     pass: 90%
     warning: 75%
