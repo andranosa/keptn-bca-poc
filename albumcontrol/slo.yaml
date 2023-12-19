@@ -6,8 +6,8 @@ comparison:
     number_of_comparison_results: 1
     aggregate_function: avg
 objectives:
-    - sli: failure_rate
-      displayName: Failure Rate
+    - sli: fr_albumcontrol
+      displayName: fr_albumcontrol
       pass:
         - criteria:
             - '>=0.000000'
@@ -16,18 +16,6 @@ objectives:
         - criteria:
             - '>=0.000000'
             - <2.500000
-      weight: 1
-      key_sli: false
-    - sli: response_time
-      displayName: Response Time
-      pass:
-        - criteria:
-            - '>=0.000000'
-            - <2500.000000
-      warning:
-        - criteria:
-            - '>=0.000000'
-            - <5000.000000
       weight: 1
       key_sli: false
 total_score:
