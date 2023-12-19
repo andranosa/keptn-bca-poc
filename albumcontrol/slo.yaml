@@ -6,30 +6,12 @@ comparison:
     number_of_comparison_results: 1
     aggregate_function: avg
 objectives:
-    - sli: slo_9b1c63fb-416d-3e96-9c2f-22f656a97951
-      displayName: ""
-      pass: []
-      warning: []
-      weight: 1
-      key_sli: false
-    - sli: failure_rate
-      displayName: Failure Rate
-      pass:
-        - criteria:
-            - '>=0.000000'
-            - <1.500000
-      warning:
-        - criteria:
-            - '>=0.000000'
-            - <3.000000
-      weight: 1
-      key_sli: false
     - sli: response_time
       displayName: Response Time
       pass:
         - criteria:
             - '>=0.000000'
-            - <3000.000000
+            - <2500.000000
       warning:
         - criteria:
             - '>=0.000000'
@@ -46,6 +28,18 @@ objectives:
         - criteria:
             - '>=0.000000'
             - <20.000000
+      weight: 1
+      key_sli: false
+    - sli: failure_rate
+      displayName: Failure Rate
+      pass:
+        - criteria:
+            - '>=0.000000'
+            - <1.500000
+      warning:
+        - criteria:
+            - '>=0.000000'
+            - <2.500000
       weight: 1
       key_sli: false
 total_score:
