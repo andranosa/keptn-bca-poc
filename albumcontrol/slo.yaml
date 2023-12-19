@@ -6,8 +6,8 @@ comparison:
     number_of_comparison_results: 1
     aggregate_function: avg
 objectives:
-    - sli: fr_albumcontrol
-      displayName: fr_albumcontrol
+    - sli: rt_albumcontrol
+      displayName: rt_albumcontrol
       pass:
         - criteria:
             - '>=0.000000'
